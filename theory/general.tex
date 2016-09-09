@@ -1,0 +1,59 @@
+\documentclass[11p]{report}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+
+\pagestyle{headings}
+\setlength{\baselineskip}{24pt}
+
+\begin{document}
+
+\title{Partial Differential Equations}
+\author{Rodrigo Hern'andez Mota}
+
+\maketitle
+
+\section{General theory}
+[ add information ]
+
+% DESCRETE REPRESENTATION -----------------------------------------
+\section{Discrete representation}
+% approx. derivative
+\subsection{First order derivative approximation}
+Take a function $f(x)$ of class $C^n$ where $n$ is large enough to satisfy the requirements. The derivatives of this function can be approximated as following:
+
+\begin{equation}
+f'(x) \approx \frac{f(x+a)-f(x)}{a} \\
+f'(x) \approx \frac{f(x-a)-f(x)}{-a} 
+\end{equation}
+
+Adding these approximations and solving for $f'(x)$ we have:
+
+\begin{equation}
+f'(x) \approx \frac{f(x+a)-f(x-a)}{2a}
+\end{equation}
+
+by using Tylor's Series we can arrive at the same approximation. In essence:
+
+\begin{equation}
+f(x+a) \approx f(x) + a f'(x) + \frac{a^2}{2!} f''(x) + ... \\
+f(x-a) \approx f(x) - a f'(x) + \frac{a^2}{2!} f''(x) + ...
+\end{equation}
+
+If we ignore the second order derivatives then it is possible to show we can obtain the exact same representations for $f'(x)$. 
+
+% first order partial derivaties
+\subsection{First order partial derivatives approximation}
+Let $u$ be a function of $x,y$. Then the approx. of the partial derivatives can be represented as:
+
+For $x$ variable
+\begin{equation}
+\frac{\partial u}{\partial x} \approx \frac{u(x+a,y)-u(x,y)}{a} \approx  \frac{u(x-a,y) - u(x,y)}{-a}
+\end{equation}
+
+For $y$ variable
+\begin{equation}
+\frac{\partial u}{\partial y} \approx \frac{u(x,y+b)-u(x,y)}{b} \approx \frac{u(x,y-b)-u(x,y)}{-b}
+\end{equation} 
+
+\end{document}
