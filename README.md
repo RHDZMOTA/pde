@@ -8,8 +8,9 @@ of Partial Differential Equations at ITESO University.
 
 Author: Rodrigo Hernández Mota
 
-## Methods
+## Theory and methods
 
+[ add ]
 
 ## Scripts
 
