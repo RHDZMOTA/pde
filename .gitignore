@@ -1,0 +1,6 @@
+# LaTeX auxiliar documents #
+############################
+*.aux
+*.log
+*.pdf
+
